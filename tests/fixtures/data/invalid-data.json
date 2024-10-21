@@ -1,0 +1,17 @@
+[
+
+    {
+    "username": "standard_user",
+    "password":"nevaliden password",
+    "address":"" ,
+    "phone":"",
+    "title":"Products"
+    },
+    {
+    "username": "nevaliden user",
+    "password":"secret_sauce",
+    "address":"" ,
+    "phone":"",
+    "title":"Products"
+    }
+]
