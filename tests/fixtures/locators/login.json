@@ -2,5 +2,9 @@
     "username": "[data-test=\"username\"]",
     "password": "[data-test=\"password\"]",
     "loginBtn":"[data-test=\"login-button\"]",
-    "title":"[data-test=\"title\"]"
+    "title":"[data-test=\"title\"]",
+    "firstNameInput":"['#first-name']",
+    "lastNameInput": "['#last-name']", 
+    "postalCodeInput":"['#postal-code']",
+    "finishButton": "['.btn_action']" // Adjust based on button class
 }
