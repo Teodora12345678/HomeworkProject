@@ -1,0 +1,18 @@
+{"version":7,"type":"context-options","origin":"testRunner","browserName":"","options":{},"platform":"win32","wallTime":1730052555926,"monotonicTime":376.376,"sdkLanguage":"javascript"}
+{"type":"before","callId":"hook@1","startTime":383.703,"class":"Test","method":"step","apiName":"Before Hooks","params":{},"stack":[]}
+{"type":"before","callId":"fixture@2","parentId":"hook@1","startTime":388.625,"class":"Test","method":"step","apiName":"fixture: browser","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@3","parentId":"fixture@2","startTime":390.509,"class":"Test","method":"step","apiName":"browserType.launch","params":{"handleSIGINT":"false","headless":"true","tracesDir":"C:\\Users\\tpe\\Desktop\\Project\\HomeworkProject\\test-results\\.playwright-artifacts-0\\traces","ignoreDefaultArgs":"undefined","ignoreAllDefaultArgs":"false","env":"undefined"},"stack":[]}
+{"type":"after","callId":"pw:api@3","endTime":567.397,"attachments":[]}
+{"type":"after","callId":"fixture@2","endTime":567.701,"attachments":[]}
+{"type":"before","callId":"fixture@4","parentId":"hook@1","startTime":568.917,"class":"Test","method":"step","apiName":"fixture: context","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@5","parentId":"fixture@4","startTime":571.33,"class":"Test","method":"step","apiName":"browser.newContext","params":{"acceptDownloads":"accept","bypassCSP":"false","colorScheme":"light","deviceScaleFactor":"1","hasTouch":"false","ignoreHTTPSErrors":"false","isMobile":"false","javaScriptEnabled":"true","locale":"en-US","offline":"false","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.31 Safari/537.36","viewport":"Object","baseURL":"https://www.saucedemo.com/","serviceWorkers":"allow","noDefaultViewport":"false","extraHTTPHeaders":"undefined","storageState":"undefined","recordHar":"undefined","reducedMotion":"undefined","forcedColors":"undefined","clientCertificates":"undefined"},"stack":[]}
+{"type":"after","callId":"pw:api@5","endTime":580.049,"attachments":[]}
+{"type":"after","callId":"fixture@4","endTime":588.619,"attachments":[]}
+{"type":"before","callId":"fixture@6","parentId":"hook@1","startTime":589.753,"class":"Test","method":"step","apiName":"fixture: page","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@7","parentId":"fixture@6","startTime":591.909,"class":"Test","method":"step","apiName":"browserContext.newPage","params":{},"stack":[]}
+{"type":"after","callId":"pw:api@7","endTime":704.057,"attachments":[]}
+{"type":"after","callId":"fixture@6","endTime":704.38,"attachments":[]}
+{"type":"after","callId":"hook@1","endTime":704.474,"attachments":[]}
+{"type":"before","callId":"pw:api@8","startTime":709.476,"class":"Test","method":"step","apiName":"page.goto","params":{"url":"https://demoqa.com/droppable","waitUntil":"load"},"stack":[{"file":"C:\\Users\\tpe\\Desktop\\Project\\HomeworkProject\\tests\\Pages\\day3Demoqa\\droppble.Page.ts","line":18,"column":25,"function":"DropPage.goto"}]}
+{"type":"after","callId":"pw:api@8","endTime":10289.721,"attachments":[]}
+{"type":"before","callId":"pw:api@9","startTime":10292.652,"class":"Test","method":"step","apiName":"locator.dragTo","params":{"source":"#draggable","target":".drop-box ui-droppable","strict":"true","timeout":"100000"},"stack":[{"file":"C:\\Users\\tpe\\Desktop\\Project\\HomeworkProject\\tests\\Pages\\day3Demoqa\\droppble.Page.ts","line":23,"column":28,"function":"DropPage.performDragAndDrop"}]}

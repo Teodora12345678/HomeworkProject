@@ -1,0 +1,7 @@
+{
+    "usernamePlaceholder": "input[placeholder='UserName']",
+    "passwordPlaceholder": "input[placeholder='Password']",
+    "loginButton": "button[role='button'][name='Login']",
+    "logoutButton": "button[role='button'][name='Log out']"
+  }
+  

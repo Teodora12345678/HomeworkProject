@@ -1,12 +1,11 @@
 import { test, expect } from '@playwright/test';
-import { ProductsPage } from './ProductsPage'; //import ProducstPage class
-import { CartPage } from './test/Pages/CartPage'; //import CartPage class
-import { CheckoutPage } from './test/Pages/CheckoutPage'; // import CheckoutPage class
-import { LoginPage } from './tests/Pages/LoginPage';  // Import LoginPage class
+import { CartPage } from '../Pages/CartPage'; //import CartPage class
+import { CheckoutPage } from '../Pages/Checkoutpage.spec'; // import CheckoutPage class
+import { LoginPage } from '../Pages/LoginPage';  // Import LoginPage class
+import { ProductsPage } from '../Pages/ProductPage';
 
 test.describe('Sauce Demo Shopping Flow', () => {
-  test.beforeEach(async ({ page }) => {
-    // Navigate to the Sauce Demo site before each test
+  test.beforeEach(async ({ page }) => {          // navigate to souce demo before each test
     await page.goto('https://www.saucedemo.com/');
   });
 
@@ -15,9 +14,9 @@ test.describe('Sauce Demo Shopping Flow', () => {
     const productsPage = new ProductsPage(page);
     const cartPage = new CartPage(page);
     const checkoutPage = new CheckoutPage(page);
-
+    const loginPage = new LoginPage(page);
     // Step 1: Login to sauce demo
-    await LoginPage.login('standard_user', 'secret_sauce');
+    await loginPage.login('standard_user', 'secret_sauce');
 
     // Verify that we are on the Products page after login
     await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');

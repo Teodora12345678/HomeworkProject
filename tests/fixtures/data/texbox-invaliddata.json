@@ -1,0 +1,15 @@
+ {   "invalidUsers": [
+        {
+            "fullName": "",
+            "email": "invalidEmail",
+            "currentAddress": "No Address",
+            "permanentAddress": "No Address"
+        },
+        {
+            "fullName": "Test User",
+            "email": "",
+            "currentAddress": "No Address",
+            "permanentAddress": "No Address"
+        }
+    ]
+}

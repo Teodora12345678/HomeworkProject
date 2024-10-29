@@ -4,7 +4,7 @@ test('has title', async ({ page }) => {
   await page.goto('https://playwright.dev/'); //verifikuvaj deka se navigra na stranata
 
   // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/); // verifikuvaj deka ima title playright 
+  await expect(page).toHaveTitle(/Playwright/); // verifikuvaj deka ima title plawrright 
 });
 
 test('get started link', async ({ page }) => {

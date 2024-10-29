@@ -1,5 +1,5 @@
 import { Page, Locator } from '@playwright/test';
-import locators from './tests/fixtures/locators/login.json';  // Import the JSON file with selectors
+import locators from '../fixtures/locators/login.json';
 
 export class CheckoutPage {
     readonly page: Page;

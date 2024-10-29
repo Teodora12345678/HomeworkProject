@@ -1,0 +1,17 @@
+[
+
+    {
+        "fullName": "Adriana",
+        "email": "adrianalima@example.com",
+        "currentAddress": "123 Main St",
+        "permanentAddress": "456 Elm St"
+    },
+
+    {
+        "fullName": "Bella Hadid",
+        "email": "belahadid@example.com",
+        "currentAddress": "789 Maple Ave",
+        "permanentAddress": "101 Pine St"
+    }
+]
+    

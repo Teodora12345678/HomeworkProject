@@ -1,0 +1,1 @@
+[{"timeElapsed":1651,"requestId":"758aa83d5284d1f9a10183a3bc6a3abc","position":0,"renderables":"11100000","imageHeight":152,"imageWidth":292,"iu":"6d5b41469b66acea2416073b2ce1518df0a185f5959f278497f4d03dc5d347a6","recdid":"-NYdJWHcmH4rXTXs2--YZw","advid":"54524129","lsd":"7daa1514-e6f4-40b4-a52e-805bff3e17a7","titleLength":71,"sourceLength":10}]

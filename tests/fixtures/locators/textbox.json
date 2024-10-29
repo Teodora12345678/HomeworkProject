@@ -1,0 +1,8 @@
+{
+    "fullNameInput": "#userName",
+    "emailInput": "#userEmail",
+    "currentAddressInput": "#currentAddress",
+    "permanentAddressInput": "#permanentAddress",
+    "submitButton": "#submit",
+    "output": "#output"
+}

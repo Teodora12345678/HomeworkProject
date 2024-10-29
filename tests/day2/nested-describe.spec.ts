@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test'; // TASK 2
+import { test, expect } from '@playwright/test'; // Task 2
 
 test.describe ("Test suite for update user", () => {
   test.describe ("Test suite for update username tests", () => {

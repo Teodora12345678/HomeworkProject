@@ -1,7 +1,7 @@
 [
     
-        {
-            "username": "standard_user",
+       {
+         "username": "standard_user",
             "password": "secre_sauce",
             "status": "passed"
         },
@@ -24,5 +24,5 @@
             "status": "passed"
         }
     
-
+          
 ]
