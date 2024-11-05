@@ -7,8 +7,8 @@ export class RadioButtonsPage {
 
     constructor(page: Page) {
         this.page = page;
-        // this.yesBtn = page.locator("#yesRadio");
-        this.yesBtn = page.locator('label:has-text("Yes") + input[type="radio"]');
+        this.yesBtn = page.locator("#yesRadio");
+        //this.yesBtn = page.locator('label:has-text("Yes") + input[type="radio"]');
         this.impressiveBtn = page.locator("#impressiveRadio");
     }
 

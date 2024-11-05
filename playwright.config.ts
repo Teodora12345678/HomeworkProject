@@ -11,6 +11,7 @@ import { defineConfig, devices } from '@playwright/test';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
+  //grep: /smoke/,
   timeout: 1600000,
   testDir: './tests',
   /* Run tests in files in parallel */
@@ -25,6 +26,7 @@ export default defineConfig({
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
+        //baseURL: 'https://petstore.swagger.io/v2/',
         // Timeout for individual actions (e.g., clicks, typing)
         actionTimeout: 70000,  // 10 seconds
 

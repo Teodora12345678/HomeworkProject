@@ -10,5 +10,8 @@
   "devDependencies": {
     "@playwright/test": "^1.48.0",
     "@types/node": "^20.16.11"
+  },
+  "dependencies": {
+    "mariadb": "^3.4.0"
   }
 }

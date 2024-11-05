@@ -6,7 +6,10 @@ test('Check Broken Link', async ({ page }) => {
     
     await brokenLinksPage.goto();
     
+    await brokenLinksPage.validLinkMethod();
+    await expect(page).toHaveURL('https://demoqa.com/')
+
     await brokenLinksPage.brokenLinkMethod();
-    
     await expect(page).toHaveURL('http://the-internet.herokuapp.com/status_codes/500'); 
+    
 });

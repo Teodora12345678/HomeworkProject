@@ -12,7 +12,6 @@ export class LinksPage {
     readonly unauthorized:Locator;
     readonly notFoundLink:Locator;
 
-
     constructor(page: Page) {
         this.page = page;
         this.homeLink = page.locator("#simpleLink");

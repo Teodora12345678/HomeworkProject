@@ -1,7 +1,10 @@
-import { Page, Locator, expect } from '@playwright/test';
-import * as locators from '../../fixtures/locators/textbox.json'
+import { Page, Locator } from '@playwright/test';
+import * as locators from '../../fixtures/locators/textbox.json';
 
 export class TextBoxPage {
+    static getOutputText() {
+      throw new Error('Method not implemented.');
+    }
     readonly page: Page;
     readonly fullNameInput: Locator;
     readonly emailInput: Locator;
@@ -12,41 +15,39 @@ export class TextBoxPage {
 
     constructor(page: Page) {
         this.page = page;
-        this.fullNameInput = page.locator(locators.fullNameInput); // Selector for Full Name input
-        this.emailInput = page.locator(locators.emailInput); // Selector for Email input
-        this.currentAddressInput = page.locator(locators.currentAddressInput); // Selector for Current Address input
-        this.permanentAddressInput = page.locator(locators.permanentAddressInput); // Selector for Permanent Address input
-        this.submitButton = page.locator(locators.submitButton); // Selector for Submit button
-        this.output = page.locator(locators.output); // Selector for output element
-    }
+        this.fullNameInput = page.locator(locators.fullNameInput);
+        this.emailInput = page.locator(locators.emailInput);
+        this.currentAddressInput = page.locator(locators.currentAddressInput);
+        this.permanentAddressInput = page.locator(locators.permanentAddressInput);
+        this.submitButton = page.locator(locators.submitButton);
+        this.output = page.locator(locators.output);
+    }  
 
     async goto() {
-        await this.page.goto('https://demoqa.com/text-box'); // Navigate to the Text Box page
+        await this.page.goto('https://demoqa.com/text-box');
     }
 
     async fillFullName(fullNameString: string) {
-        await this.fullNameInput.fill(fullNameString); // Fill in the Full Name
+        await this.fullNameInput.fill(fullNameString);
     }
 
     async fillEmail(email: string) {
-        await this.emailInput.fill(email); // Fill in the Email
+        await this.emailInput.fill(email);
     }
 
     async fillCurrentAddress(currentAddress: string) {
-        await this.currentAddressInput.fill(currentAddress); // Fill in the Current Address
+        await this.currentAddressInput.fill(currentAddress);
     }
 
     async fillPermanentAddress(permanentAddress: string) {
-        await this.permanentAddressInput.fill(permanentAddress); // Fill in the Permanent Address
+        await this.permanentAddressInput.fill(permanentAddress);
     }
 
     async submit() {
-        await this.submitButton.click(); // Click on the Submit button
-    }
-   
-    async getOutputText() {
-    return await this.output.textContent(); // Return the text inside the output element
-}
-     
+        await this.submitButton.click();
     }
 
+    async getOutputText() {
+        return await this.output.textContent();
+    } 
+}  

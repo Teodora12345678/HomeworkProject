@@ -4,7 +4,6 @@ import { LinksPage } from '../Pages/day3Demoqa/LinksPage';
 
 test('Click Links', async ({ page }) => {
     const linksPage = new LinksPage(page);
-
     await linksPage.goto(); 
 
     await linksPage.homeLinkmethod();
@@ -17,7 +16,6 @@ test('Click Links', async ({ page }) => {
     const message = await page.locator('#linkResponse').textContent(); //imaat isto ID
 
     await linksPage.createdLinkMethod();
-    
     expect(message).toContain('Link has responded with staus 201 and status text Created');
     
     await linksPage.noContenLinkMethod();

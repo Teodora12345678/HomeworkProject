@@ -1,0 +1,21 @@
+[
+    
+    {
+         "name": "Tea",
+         "lastname": "Tpe",
+          "age": "21",
+          "salary": "10000",
+          "department":"qa"
+
+     },
+
+     {
+        "name": "Tea2",
+         "lastname": "tpe2",
+          "age": "212",
+          "salary": "100002",
+          "department":"qa2"
+
+     }
+
+]
